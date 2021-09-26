@@ -1,8 +1,8 @@
 from pymycobot.mycobot import MyCobot
 from init import init
-from init import port
+import port
 
-mc = MyCobot(port)
+mc = MyCobot(port.port)
 init(mc)
 
 while True:

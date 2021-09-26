@@ -1,10 +1,10 @@
 from pymycobot.mycobot import MyCobot
 from pymycobot.genre import Angle, Coord
-from init import init
+import init
 import time
 
 def mov1(mc : MyCobot):
-    init(mc)
+    init.init(mc)
     time.sleep(10)
     mc.send_angle(Angle.J1.value, 90, 30)
     time.sleep(5)
@@ -44,8 +44,8 @@ def mov1(mc : MyCobot):
     time.sleep(5)
 
 def mov2(mc : MyCobot):
-    init(mc)
+    init.init(mc)
 
 def mov3(mc : MyCobot):
-    init(mc)
+    init.init(mc)
 
