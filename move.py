@@ -64,5 +64,6 @@ def mov3(mc : MyCobot):
     global isMoving
     isMoving = True
     init.init(mc)
+    fromCoord = mc.get_coords()
     isMoving = False
 
